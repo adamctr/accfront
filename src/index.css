@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  margin-left: 1.5rem; /* Marge pour les listes */
+  padding-left: 1.5rem; /* Padding pour alignement */
+}
+
+ul {
+  list-style-type: disc; /* Puces pour les listes non ordonnées */
+}
+
+ol {
+  list-style-type: decimal; /* Nombres pour les listes ordonnées */
+}
+
+/* Styles de base pour les liens */
+a {
+  color: #1d4ed8; /* Couleur de lien (bleu Tailwind) */
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1e40af; /* Couleur plus foncée au survol */
+}
+
+/* Styles de base pour les titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphes */
+p {
+  margin-bottom: 1rem; /* Espacement entre paragraphes */
+}
